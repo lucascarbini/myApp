@@ -1,11 +1,16 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            Fotos
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+    <button ion-button full color="primary" (click)="takePhoto(1)">Tomar foto</button>
+    <button ion-button full color="secondary" (click)="takePhoto(0)">Seleccionar foto</button>
+    <!--<button ion-button full color="danger" (click)="recortarFoto()">Recortar foto</button>-->
 
+    <!--<img [src]="base64Image" />-->
+    <img src="{{base64Image}}" />
 </ion-content>
